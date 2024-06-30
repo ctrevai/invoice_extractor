@@ -57,8 +57,8 @@ class ExtractInvoice:
         st.write("Upload Invoice")
         uploaded_file = st.file_uploader("Choose a file", type=["pdf"])
         if uploaded_file is not None:
-            st.write(uploaded_file)
-            st.write(uploaded_file.name)
+            # st.write(uploaded_file)
+            # st.write(uploaded_file.name)
             file_content = uploaded_file.getvalue()
             try:
                 file_obj = io.BytesIO(file_content)
